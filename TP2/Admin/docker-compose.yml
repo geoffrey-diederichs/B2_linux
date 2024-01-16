@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  ratio:
+    image: debian:latest 
+    user: "1010"
+    entrypoint: whoami 
