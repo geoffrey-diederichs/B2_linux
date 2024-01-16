@@ -68,7 +68,7 @@ commun-db-1          | 2024-01-16T09:42:34.273155Z 0 [System] [MY-011323] [Serve
 commun-db-1          | 2024-01-16T09:42:34.273225Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.2.0'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
 ```
 
-```bash
+```console
 geoffrey > docker ps
 CONTAINER ID   IMAGE        COMMAND                  CREATED              STATUS              PORTS                                   NAMES
 0e7cd24c4a4a   php:ratio    "docker-php-entrypoi…"   About a minute ago   Up About a minute                                           commun-php-1
