@@ -1,6 +1,6 @@
 # TP2 Commun : Stack PHP
 
-```shell
+```console
 geoffrey > docker compose up
 [+] Running 4/4
  ✔ Network commun_default         Created                                                                        0.2s 
