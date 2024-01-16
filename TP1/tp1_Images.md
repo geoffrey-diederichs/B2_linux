@@ -47,6 +47,7 @@ WORKDIR /app
 COPY app.py /app/app.py
 
 ENTRYPOINT ["python3", "app.py"]
+```
 
 🌞 **Build l'image**
 
