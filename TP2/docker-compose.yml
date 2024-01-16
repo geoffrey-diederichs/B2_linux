@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  php:
+    build: ./php/
+    image: php:ratio 
+  db:
+    image: mysql
+    command: --init-file /db/hello.sql
+    volumes:
+      - ./db/hello.sql:/db/hello.sql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: secure_password
+      MYSQL_DATABASE: hello
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+     - PMA_ARBITRARY=1
+  
