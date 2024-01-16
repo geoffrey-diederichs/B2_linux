@@ -6,5 +6,4 @@ WORKDIR ratio
 
 COPY ratio.php ratio.php 
 
-#CMD [ "php", "./ratio.php" ]
-CMD [ "sleep", "999" ]
+ENTRYPOINT [ "php", "ratio.php" ]
